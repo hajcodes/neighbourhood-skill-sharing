@@ -62,7 +62,7 @@ function Register() {
     }
 
     try {
-      await API.post("/auth/register", {
+      await API.post(import.meta.env.VITE_API_URL + "/api/auth/register", {
         ...form,
         coordinates: coordinates
           ? {

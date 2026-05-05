@@ -62,7 +62,7 @@ function Register() {
     }
 
     try {
-      await API.post( "https://neighbourhood-skill-sharing.onrender.com/api/auth/register", {
+      await API.post("/auth/register", {
         ...form,
         coordinates: coordinates
           ? {
